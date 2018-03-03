@@ -5,8 +5,6 @@ import java.io.IOException;
 /**
  * Controls Pixelbot's body which includes a pan/tilt servo that mounts the phone ("face") and
  * motor controllers, which drive track motors for maneuvering the robot.
- *
- * Written by Dave Burke (2018)
  */
 public class PixelbotBodyController extends BluetoothArduinoBridge {
     // Move servo protocol: SERVO_MOVE_CMD <pan-postion-degrees>  <tilt-position-degrees>
@@ -14,8 +12,6 @@ public class PixelbotBodyController extends BluetoothArduinoBridge {
 
     // Track servo protocol: SERVO_TRACK_CMD <pan-error> <tilt-error> <drive-enable> <object-size>
     private static final byte SERVO_TRACK_CMD = 1;  // check
-
-    // TODO: Activate driving mode: DRIVING_MODE_ENABLE_CMD [1|0]
 
     public void moveServoCommand(byte panPos, byte tiltPos) throws IOException {
         byte vals[] = { panPos, tiltPos };
