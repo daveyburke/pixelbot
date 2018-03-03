@@ -59,7 +59,7 @@ public:
 class PanTiltServos {
 private:
   const int32_t PROPORTIONAL = 100;
-  const int32_t DERIVATIVE = 200;
+  const int32_t DERIVATIVE = 100;
   
   Servo mPanServo;
   Servo mTiltServo;
@@ -94,10 +94,6 @@ public:
     if (mPanAngle < 0) mPanAngle = 0;
     if (mTiltAngle > 180) mTiltAngle = 180;
     if (mTiltAngle < 0) mTiltAngle = 0;
-    
-    char tmp[80];
-    sprintf(tmp, "mPanAngle %d, mPanError %d\n", mPanAngle, mPanError);
-    Serial.write(tmp);
     
     mPanServo.write(mPanAngle);
     mTiltServo.write(mTiltAngle);
@@ -171,8 +167,8 @@ void loop() {
       Serial.write(tmp);
    
       // Steering differential is proportional to the error times the forward speed
-      int32_t angle = 90 - panTiltServos.getPanAngle();
-      int32_t differential = (angle * 2 + (angle * forwardSpeed));
+      int32_t angleComponent = (90 - panTiltServos.getPanAngle()) * 2.5;
+      int32_t differential = (angleComponent + (angleComponent * forwardSpeed));
       
       sprintf(tmp, "differential %d\n", differential);
       Serial.write(tmp);
@@ -184,6 +180,9 @@ void loop() {
       driveMotors.updateLeftMotorSpeed(leftSpeed);
       driveMotors.updateRightMotorSpeed(rightSpeed);
     }
+  } else {
+    driveMotors.updateLeftMotorSpeed(0);
+    driveMotors.updateRightMotorSpeed(0);
   }
   
   delay(20);  
