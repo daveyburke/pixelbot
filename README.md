@@ -11,6 +11,7 @@ The robot is built with foam board on an Agent 390 base. I've used a Pixel 1 for
  
  Photos: 
  ![Pixelbot](https://github.com/daveyburke/pixelbot/blob/master/Pixelbot.jpg | width=640)
+ <img src="https://github.com/daveyburke/pixelbot/blob/master/Pixelbot.jpg" width=640/>
  ![Pixelbot Body](https://github.com/daveyburke/pixelbot/blob/master/Pixelbot_Back.jpg)
  
  Schematic diagram:
