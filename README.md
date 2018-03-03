@@ -14,6 +14,7 @@ The robot is built with foam board on an Agent 390 base. I've used a Pixel 1 for
 Schematic diagram:
  <img src="https://github.com/daveyburke/pixelbot/blob/master/Schematic.jpg"/>
   
-The Arduino code is contained in PixelbotBody.ino. The BluetoothArduinoBridge.java might be useful for other projects looking at using this setup of an Android app as the brain and Arduino for controlling actuaters. Also CameraObjectRecognizer and the classes in the com.example.pixelbot.tensorflow is a useful minimal implementation of object recognition with camera.
+The Arduino code is contained in PixelbotBody.ino. The BluetoothArduinoBridge.java might be useful for other projects looking at using this setup of an Android as a powerful computer and Arduino for controlling hardware. Also CameraObjectRecognizer and the classes in the com.example.pixelbot.tensorflow package are a useful minimal implementation of object recognition with camera.
  
  Have fun :)
+ --Dave
