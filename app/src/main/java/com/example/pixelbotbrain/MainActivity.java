@@ -164,7 +164,8 @@ public class MainActivity extends AppCompatActivity implements
             float panError = -255 * (location.centerX() - viewFinderWidth / 2) / viewFinderWidth;
             float tiltError = 255 * (location.centerY() - viewFinderHeight / 2) / viewFinderHeight;
             float objectSize = 255 * location.width() * location.height() / (viewFinderWidth * viewFinderHeight);
-            mPixelbotBodyController.trackServo((byte)panError, (byte)tiltError, true, (byte) objectSize);
+            mPixelbotBodyController.trackServo((byte)panError, (byte)tiltError, true,
+                    (byte) objectSize);
         }
     }
 
