@@ -6,10 +6,9 @@ the front-facing camera is its eye, and the speaker is its mouthpiece. The brain
 with its body via Bluetooth to an Arduino-controlled set of servos and motors. A convolutional neural
 network (powered by TensorFlow) is used for object detection (trained on the COCO dataset). The robot
 speaks and, well, thanks to the input from my 6 yr old, farts.
- 
-Photos: 
- <img src="https://github.com/daveyburke/pixelbot/blob/master/Pixelbot_Back.jpg" width=400/>
+
  <img src="https://github.com/daveyburke/pixelbot/blob/master/Pixelbot.jpg" width=400/>
+ <img src="https://github.com/daveyburke/pixelbot/blob/master/Pixelbot_Back.jpg" width=400/>
 
 The robot is built with foam board on an Agent 390 base. I've used a Pixel 1 for the phone (hence the name!). An HC-06 Bluetooth module connects the phone to the Arduino. The head is mounted on a Mallofusa pan/tilt servo rig (but using Futaba S3003 servos). The phone attaches with Volport magnetic car mount.
 
