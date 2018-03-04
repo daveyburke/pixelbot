@@ -1,3 +1,18 @@
+/* Copyright 2018 Dave Burke. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+==============================================================================*/
+
 package com.example.pixelbotbrain;
 
 import android.bluetooth.BluetoothAdapter;
@@ -12,13 +27,11 @@ import java.util.Set;
 import java.util.UUID;
 
 /**
- * Provides a simple Bluetooth bridge to an HC-05 bluetooth module connected to an Arduino.
+ * Provides a simple Bluetooth bridge to an HC-06 bluetooth module connected to an Arduino.
  * Uses a simple byte protocol: COMMAND_NUM NUM_VALS VAL1 VAL2 ... VALN
  * Java byte (which recall are signed) maps to Arduino's int8_t
  *
- * Specify the MAC address of your HC-05 with DEViCE_ADDRESS.
- *
- * Written by Dave Burke (2018)
+ * Specify the MAC address of your HC-06 with DEViCE_ADDRESS.
  */
 public class BluetoothArduinoBridge {
     private static final String TAG = "BluetoothArduinoBridge";
