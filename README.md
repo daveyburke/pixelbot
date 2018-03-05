@@ -4,8 +4,8 @@ An Android- and Arduino-powered AI bot
 Pixelbot is an AI robot that uses an Android device as a brain - the screen animates its face,
 the front-facing camera is its eye, and the speaker is its mouthpiece. The brain communicates
 with its body via Bluetooth to an Arduino-controlled set of servos and motors. A convolutional neural
-network (powered by TensorFlow) is used for object detection (trained on the COCO dataset). The robot
-speaks and, well, thanks to the input from my 6 yr old, farts.
+network (powered by TensorFlow) is used for object detection (trained on the COCO dataset). The robot tracks
+objects with it's head as well as body. The robot speaks and, well, thanks to the input from my 6 yr old, farts.
 
  <img src="https://github.com/daveyburke/pixelbot/blob/master/Pixelbot.jpg" width=400/> <img src="https://github.com/daveyburke/pixelbot/blob/master/Pixelbot_Back.jpg" width=400/>
 
