@@ -35,7 +35,7 @@ import java.util.UUID;
  */
 public class BluetoothArduinoBridge {
     private static final String TAG = "BluetoothArduinoBridge";
-    private static final String DEVICE_ADDRESS = "20:16:12:12:70:84";  // my HC-05 address
+    private static final String DEVICE_ADDRESS = "20:16:12:12:70:84";  // my HC-06 address
     private final UUID PORT_UUID = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb");
 
     private Listener mListener;
